@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-size: x-large;
+    color: #f0f0f0;
+    background-color: #212529;
+    /* Cor do texto para tema escuro */
+}
+
+body
+{
+    background-color: #212529;
+}
+
+header {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+footer {
+    color: #FFFFFF;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+p {
+    margin-top: 24px;
+}
+
+#copyButtonId img {
+    height: 1.3rem;
+}
+
+#inputLengthId
+{
+    cursor: pointer;
+}
+
+#imgClip
+{
+    background-color: #f8f9fa;
+
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#copyButtonId:hover, #copyButtonId:hover > * 
+{
+    background-color: #d3d4d5;
+    border-color: #c6c7c8;
+
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}

@@ -78,12 +78,23 @@ document.getElementById('copyButtonId').addEventListener('click', function() {
     }, 2000);
   });
   
+lenInput.value = 6;
+infoLength.innerHTML = lenInput.value;
+
+[chkLower, chkUpper, chkNumber, chkSymbols].forEach(chk => {
+  chk.addEventListener('click', () => {
+    generatePassword(
+      chkNumber.checked,
+      chkSymbols.checked,
+      chkLower.checked,
+      chkUpper.checked,
+      lenInput.value
+    );
+  });
+});
 
 document.onload = generatePassword( false, false, true, false, 6);
 document.onload = chkLower.checked = true;
 document.onload = chkUpper.checked = false;
 document.onload = chkNumber.checked = false;
 document.onload = chkSymbols.checked = false;
-
-lenInput.value = 6;
-infoLength.innerHTML = lenInput.value;
