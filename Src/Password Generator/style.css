@@ -44,6 +44,7 @@ p {
 
 #imgClip
 {
+    color: #212529;
     background-color: #f8f9fa;
 
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -55,4 +56,13 @@ p {
     border-color: #c6c7c8;
 
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    max-height: 100%;
 }
